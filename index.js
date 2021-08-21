@@ -6,7 +6,7 @@ module.exports = class extends Page {
         super({title:"Home", sName:"Richard Hildred"});
     }
     render(sPage) {
-        const oJson = fetch("https://prog8110summer2021-default-rtdb.firebaseio.com/meals.json").json();
+        const oJson = fetch("https://prog8110-final-be7a4-default-rtdb.firebaseio.com/meals.json").json();
         console.log(oJson);
         let sResult = "<h1>Upcoming Popup Meals</h1>";
         let n = 0;
